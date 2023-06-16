@@ -1,0 +1,11 @@
+sources:
+  plankton:
+      description: Sample images required to demonstrate the YOLOv5 model trained in the Identification of Marine Inhabitants using open-sourced Fathomnet Dataset
+      origin: 
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["zip://*.tif::https://zenodo.org/record/6143685/files/images.zip"] # Update URL
+        chunks: {}
+        storage_options: {'anon': True}
+        coerce_shape: [1000, 1000]
+        exif_tags: True
