@@ -1,0 +1,12 @@
+name: yolov5_fathomnet_model
+url: https://github.com/asthanameghna/FathomNet23/
+import: yolov5_fathomnet
+model: yolov5
+#args:
+#    label_level: label3_detritus
+prediction_fn:
+    call: predict_batch
+    args:
+        X: image
+    kwargs:
+        batch_size: 3
