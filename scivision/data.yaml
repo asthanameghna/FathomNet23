@@ -4,7 +4,7 @@ sources:
       origin: 
       driver: intake_xarray.image.ImageSource
       args:
-        urlpath: ["zip://*.jpg::https://zenodo.org/record/8032379/files/Fathomnet-by-Phylum-2.zip"]
+        urlpath: ["zip://Fathomnet-by-Phylum-2/test/images/*.jpg::https://zenodo.org/record/8032379/files/Fathomnet-by-Phylum-2.zip"]
         chunks: {}
         storage_options: {'anon': True}
         coerce_shape: [1000, 1000]
